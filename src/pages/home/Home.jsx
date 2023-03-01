@@ -1,6 +1,8 @@
+import ActionsList from '../../components/actionsList/ActionsList';
 import Header from '../../components/header/Header';
 import InfoCard from '../../components/infoCard/InfoCard';
 import styles from './Home.module.scss';
+import HomeActions from '../../mocks/home-actions.json';
 
 const Home = () => {
     const userData = {
@@ -13,10 +15,12 @@ const Home = () => {
             <Header title={`¡Hola ${userData.name}!`} />
             <main>
                 <InfoCard>
-                    <p className={styles.infoCredit}>
-                        Mi Saldo: <strong>{userData.credit}</strong>
-                    </p>
+                    <h2 className={styles.infoTitle}>
+                        Mi Saldo
+                    </h2>
+                    <strong className={styles.credit}>{userData.credit}</strong>
                 </InfoCard>
+                <ActionsList actions={HomeActions} />
             </main>
         </>
     );

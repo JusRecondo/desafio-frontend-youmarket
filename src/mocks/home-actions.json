@@ -1,0 +1,22 @@
+[
+    {
+        "id": "action1",
+        "name": "Cargar Saldo",
+        "icon": "../assets/credit-icon.svg"
+    },
+    {
+        "id": "action2",
+        "name": "Enviar Premio",
+        "icon": "../assets/awards-icon.svg"
+    },
+    {
+        "id": "action3",
+        "name": "Movimientos",
+        "icon": "../assets/movements-icon.svg"
+    },
+    {
+        "id": "action2",
+        "name": "Ajustes",
+        "icon": "../assets/settings-icon.svg"
+    }
+]

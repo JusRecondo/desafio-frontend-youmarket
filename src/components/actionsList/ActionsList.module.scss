@@ -1,0 +1,28 @@
+@import '../../styles/config';
+
+.title {
+    font-size: 20px;
+}
+
+.actionsList {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+    width: 100%;
+    margin: 10px 0;
+    color: $orange;
+
+    .listItem {
+        text-align: center;
+    }
+
+    .actionName {
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 4px;
+    }
+}
+
+
+
