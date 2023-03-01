@@ -16,10 +16,7 @@ const Home = () => {
         <>
             <Header title={`¡Hola ${userData.name}!`} showBackButton={false} />
             <main>
-                <InfoCard>
-                    <h2 className={styles.infoTitle}>
-                        Mi Saldo
-                    </h2>
+                <InfoCard title="Mi Saldo">
                     <strong className={styles.credit}>{userData.credit}</strong>
                 </InfoCard>
                 <ActionsList actions={HomeActions} />

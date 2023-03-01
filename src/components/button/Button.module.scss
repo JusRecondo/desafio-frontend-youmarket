@@ -1,0 +1,21 @@
+@import '../../styles/config';
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $green;
+    color: $white;
+    width: 280px;
+    max-width: 100%;
+    height: 65px;
+    padding: 24px;
+    font-size: 20px;
+    border-radius: 360px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: lighten($color: $green, $amount: 5);
+    }
+}

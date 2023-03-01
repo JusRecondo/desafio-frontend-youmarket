@@ -5,7 +5,7 @@ const Awards = () => {
 
     return (
         <>
-            <Header title='¿A quién querés premiar?' />
+            <Header title="¿A quién querés premiar?" />
         </>
     );
 }
