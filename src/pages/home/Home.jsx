@@ -1,10 +1,13 @@
+import Header from '../../components/header/Header';
 import styles from './Home.module.scss';
 
 const Home = () => {
 
+    const userName = 'Test';
+
     return (
         <>
-            <h1>Home</h1>
+            <Header title={`¡Hola ${userName}!`}/>
         </>
     );
 }
