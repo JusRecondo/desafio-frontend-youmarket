@@ -19,8 +19,8 @@ const Home = () => {
                 <InfoCard title="Mi Saldo" height="120px">
                     <strong className={styles.credit}>{userData.credit}</strong>
                 </InfoCard>
-                <ActionsList actions={HomeActions} />
-                <LastMovements movements={MovementsMock}/>
+                <ActionsList actions={HomeActions} title="Acciones" />
+                <LastMovements movements={MovementsMock} />
             </main>
         </>
     );

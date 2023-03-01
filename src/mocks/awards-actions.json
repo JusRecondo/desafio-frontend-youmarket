@@ -1,0 +1,14 @@
+[
+    {
+        "id": "action1",
+        "path": "/newaccount",
+        "name": "Agregar Cuenta",
+        "icon": "../assets/newaccount-icon.svg"
+    },
+    {
+        "id": "action2",
+        "path": "/newfile",
+        "name": "Subir Archivo",
+        "icon": "../assets/uploadfile-icon.svg"
+    }
+]

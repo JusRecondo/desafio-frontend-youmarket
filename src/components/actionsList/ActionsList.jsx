@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import styles from './ActionsList.module.scss';
 
-const ActionsList = ({ actions }) => {
+const ActionsList = ({ actions, title }) => {
     return (
         <section>
-            <h2 className={styles.title}>Acciones</h2>
+            <h2 className={styles.title}>{title}</h2>
 
             {actions && actions.length ? (
                 <ul className={styles.actionsList}>

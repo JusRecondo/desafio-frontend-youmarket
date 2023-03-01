@@ -1,0 +1,37 @@
+[
+    {
+        "id": "c1",
+        "name": "Cuenta 1",
+        "email": "cuenta1@test.com.ar"
+    },
+    {
+        "id": "c2",
+        "name": "Cuenta 2",
+        "email": "cuenta2@test.com.ar"
+    },
+    {
+        "id": "c3",
+        "name": "Cuenta 3",
+        "email": "cuenta3@test.com.ar"
+    },
+    {
+        "id": "c4",
+        "name": "Cuenta 4",
+        "email": "cuenta4@test.com.ar"
+    },
+    {
+        "id": "c5",
+        "name": "Cuenta 5",
+        "email": "cuenta5@test.com.ar"
+    },
+    {
+        "id": "c6",
+        "name": "Cuenta 6",
+        "email": "cuenta6@test.com.ar"
+    },
+    {
+        "id": "c7",
+        "name": "Cuenta 7",
+        "email": "cuenta7@test.com.ar"
+    }
+]
