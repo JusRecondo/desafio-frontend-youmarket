@@ -1,0 +1,38 @@
+@import '../../styles/config';
+
+.searchBar {
+
+}
+
+.searchLabel {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 18px;
+        background-image: url('./search-icon.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-right: 8px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+}
+
+.searchInput {
+    width: 100%;
+    background-color: $light-grey;
+    font-size: 14px;
+    padding: 10px 10px 10px 40px;
+    border-radius: 10px;
+    height: 40px;
+}
+
+.searchError {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 4px;
+}

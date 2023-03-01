@@ -16,7 +16,7 @@ const Accounts = ({ accounts, handleChange, handleSubmit, checkedOption }) => {
             {accounts && accounts.length ? (
                 <form onSubmit={handleSubmit} className={styles.accountsForm}>
                     {accounts.map(account => (
-                        <label className={styles.accountLabel} key={account.id}>
+                        <label className={styles.accountLabel} key={account.id} htmlFor={account.id}>
                             <span className={styles.initials}>
                                 {printInitials(account.name)}
                             </span>
@@ -24,6 +24,7 @@ const Accounts = ({ accounts, handleChange, handleSubmit, checkedOption }) => {
                             {account.email}
                             <input
                                 type="radio"
+                                id={account.id}
                                 name="account"
                                 value={account.name}
                                 onChange={handleChange}
@@ -32,10 +33,10 @@ const Accounts = ({ accounts, handleChange, handleSubmit, checkedOption }) => {
                             />
                         </label>
                     ))}
-                    <Button type="submit">CONTINUAR</Button>
+                    <Button type="submit" disabled={!checkedOption}>CONTINUAR</Button>
                 </form>
             ) : (
-                <p>No hay cuentas disponibles.</p>
+                <p className={styles.errorMessage}>No hay cuentas disponibles.</p>
             )}
         </section>
     );
