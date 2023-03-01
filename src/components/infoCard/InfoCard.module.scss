@@ -1,0 +1,13 @@
+@import '../../styles/config';
+
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100px;
+    padding: 16px;
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
