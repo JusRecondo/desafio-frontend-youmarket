@@ -18,4 +18,8 @@
     &:focus {
         background-color: lighten($color: $green, $amount: 5);
     }
+
+    &:disabled {
+        background-color: $grey;
+    }
 }
