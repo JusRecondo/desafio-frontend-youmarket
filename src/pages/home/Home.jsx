@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <>
-            <Header title={`¡Hola ${userData.name}!`} />
+            <Header title={`¡Hola ${userData.name}!`} showBackButton={false} />
             <main>
                 <InfoCard>
                     <h2 className={styles.infoTitle}>

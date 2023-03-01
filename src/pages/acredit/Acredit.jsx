@@ -1,10 +1,11 @@
+import Header from '../../components/header/Header';
 import styles from './Acredit.module.scss';
 
 const Acredit = () => {
 
     return (
         <>
-            <h1>Acredit</h1>
+            <Header title='¿Cuánto querés ingresar?' />
         </>
     );
 }

@@ -1,10 +1,11 @@
+import Header from '../../components/header/Header';
 import styles from './Awards.module.scss';
 
 const Awards = () => {
 
     return (
         <>
-            <h1>Awards</h1>
+            <Header title='¿A quién querés premiar?' />
         </>
     );
 }

@@ -1,21 +1,25 @@
 [
     {
         "id": "action1",
+        "path": "/acredit",
         "name": "Cargar Saldo",
         "icon": "../assets/credit-icon.svg"
     },
     {
         "id": "action2",
+        "path": "/awards",
         "name": "Enviar Premio",
         "icon": "../assets/awards-icon.svg"
     },
     {
         "id": "action3",
+        "path": "/movements",
         "name": "Movimientos",
         "icon": "../assets/movements-icon.svg"
     },
     {
         "id": "action4",
+        "path": "/settings",
         "name": "Ajustes",
         "icon": "../assets/settings-icon.svg"
     }

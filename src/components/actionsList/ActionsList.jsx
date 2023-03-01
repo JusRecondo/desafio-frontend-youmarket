@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from './ActionsList.module.scss';
 
 const ActionsList = ({ actions }) => {
@@ -9,12 +10,14 @@ const ActionsList = ({ actions }) => {
                 <ul className={styles.actionsList}>
                     {actions.map(action => (
                         <li key={action.id} className={styles.listItem}>
-                            <img
-                                src={action.icon}
-                                alt={action.name}
-                                className={styles.actionIcon}
-                            />
-                            <p className={styles.actionName}>{action.name}</p>
+                            <Link to={action.path}>
+                                <img
+                                    src={action.icon}
+                                    alt={action.name}
+                                    className={styles.actionIcon}
+                                />
+                                <p className={styles.actionName}>{action.name}</p>
+                            </Link>
                         </li>
                     ))}
                 </ul>
