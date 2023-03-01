@@ -6,19 +6,22 @@ import Awards from './pages/awards/Awards';
 import Acredit from './pages/acredit/Acredit';
 import Movements from './pages/movements/Movements';
 import Settings from './pages/settings/Settings';
+import { AuthProvider } from './context/AuthContext';
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/awards" element={<Awards />} />
-        <Route path="/acredit" element={<Acredit />} />
-        <Route path="/movements" element={<Movements />} />
-        <Route path="/settings" element={<Settings />} />
-      </Routes>
-    </div>
+    <AuthProvider>
+      <div className="App">
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/awards" element={<Awards />} />
+          <Route path="/acredit" element={<Acredit />} />
+          <Route path="/movements" element={<Movements />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
+      </div>
+    </AuthProvider>
   );
 }
 

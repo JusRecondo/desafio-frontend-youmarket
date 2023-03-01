@@ -10,7 +10,7 @@ const Home = () => {
     const userData = {
         name: 'Test',
         credit: '$10.000,00',
-    };
+    }; //taer datos del context
 
     return (
         <>

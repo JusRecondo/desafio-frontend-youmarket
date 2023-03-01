@@ -2,7 +2,7 @@ import styles from './SearchBar.module.scss';
 
 const SearchBar = ({ handleChange, value, placeholder }) => {
     return (
-        <form className={styles.searchBar} onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()}>
             <label htmlFor="searchAccount" className={styles.searchLabel}>
                 <input
                     className={styles.searchInput}

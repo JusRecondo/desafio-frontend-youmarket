@@ -48,6 +48,7 @@ main {
     padding: 14px;
     max-width: 800px;
     margin: auto;
+    min-height: calc(100vh - 80px);
 }
 
 section {
@@ -69,4 +70,10 @@ form {
 
 label {
     width: 100%;
+}
+
+.error-message {
+    font-size: 14px;
+    color: #FF0000;
+    margin-top: 8px;
 }
