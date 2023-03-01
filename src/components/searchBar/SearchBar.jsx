@@ -1,6 +1,6 @@
 import styles from './SearchBar.module.scss';
 
-const SearchBar = ({ handleChange, value, placeholder, error }) => {
+const SearchBar = ({ handleChange, value, placeholder }) => {
     return (
         <form className={styles.searchBar} onSubmit={(e) => e.preventDefault()}>
             <label htmlFor="searchAccount" className={styles.searchLabel}>
@@ -13,7 +13,6 @@ const SearchBar = ({ handleChange, value, placeholder, error }) => {
                     placeholder={placeholder}
                 />
             </label>
-            {error && <p className={styles.searchError}>{error}</p>}
         </form>
     );
 };

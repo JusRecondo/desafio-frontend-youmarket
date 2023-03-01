@@ -15,24 +15,26 @@ const Accounts = ({ accounts, handleChange, handleSubmit, checkedOption }) => {
 
             {accounts && accounts.length ? (
                 <form onSubmit={handleSubmit} className={styles.accountsForm}>
-                    {accounts.map(account => (
-                        <label className={styles.accountLabel} key={account.id} htmlFor={account.id}>
-                            <span className={styles.initials}>
-                                {printInitials(account.name)}
-                            </span>
-                            {account.name} <br />
-                            {account.email}
-                            <input
-                                type="radio"
-                                id={account.id}
-                                name="account"
-                                value={account.name}
-                                onChange={handleChange}
-                                checked={checkedOption === account.name}
-                                className={styles.accountInput}
-                            />
-                        </label>
-                    ))}
+                    <fieldset className={styles.accountsList}>
+                        {accounts.map(account => (
+                            <label className={styles.accountLabel} key={account.id} htmlFor={account.id}>
+                                <span className={styles.initials}>
+                                    {printInitials(account.name)}
+                                </span>
+                                {account.name} <br />
+                                {account.email}
+                                <input
+                                    type="radio"
+                                    id={account.id}
+                                    name="account"
+                                    value={account.name}
+                                    onChange={handleChange}
+                                    checked={checkedOption === account.name}
+                                    className={styles.accountInput}
+                                />
+                            </label>
+                        ))}
+                    </fieldset>
                     <Button type="submit" disabled={!checkedOption}>CONTINUAR</Button>
                 </form>
             ) : (
