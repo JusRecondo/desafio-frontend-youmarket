@@ -15,7 +15,7 @@
         "icon": "../assets/movements-icon.svg"
     },
     {
-        "id": "action2",
+        "id": "action4",
         "name": "Ajustes",
         "icon": "../assets/settings-icon.svg"
     }

@@ -1,0 +1,37 @@
+@import '../../styles/config';
+
+.lastMovementsList {
+
+    .listItem {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid $grey;
+
+        &::before {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin-right: 8px;
+        }
+
+
+        &.income::before {
+            background-image: url('./green-arrow.svg');
+
+        }
+
+        &.expense::before {
+            background-image: url('./red-arrow.svg');
+        }
+
+    }
+}
+
+.details {
+    text-align: center;
+    margin-right: 0;
+    margin-left: auto;
+}

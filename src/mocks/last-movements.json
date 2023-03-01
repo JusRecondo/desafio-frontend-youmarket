@@ -1,0 +1,37 @@
+[
+    {
+        "id": "lm1",
+        "description": "Carga de Saldo",
+        "type": "income",
+        "amount": "$10.000,00",
+        "date": "21/01"
+    },
+    {
+        "id": "lm2",
+        "description": "Envío de Premio",
+        "type": "expense",
+        "amount": "$2.500,00",
+        "date": "19/01"
+    },
+    {
+        "id": "lm3",
+        "description": "Envío de Premio",
+        "type": "expense",
+        "amount": "$2.500,00",
+        "date": "18/01"
+    },
+    {
+        "id": "lm4",
+        "description": "Envío de Premio",
+        "type": "expense",
+        "amount": "$2.500,00",
+        "date": "18/01"
+    },
+    {
+        "id": "lm5",
+        "description": "Carga de Saldo",
+        "type": "income",
+        "amount": "$7.500,00",
+        "date": "17/01"
+    }
+]
