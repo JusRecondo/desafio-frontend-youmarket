@@ -1,10 +1,10 @@
 import styles from './Button.module.scss';
 
-const Button = ({ children, handleClick, customClass, disabled = false, type = 'button' }) => {
+const Button = ({ children, onClick, customClass, disabled = false, type = 'button' }) => {
     return (
         <button
             className={`${styles.button} ${customClass ?? ''}`}
-            onClick={handleClick}
+            onClick={onClick}
             disabled={disabled}
             type={type}
         >

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Button from '../../components/button/Button';
 import Header from '../../components/header/Header';
@@ -10,10 +10,6 @@ const Login = () => {
     const [error, setError] = useState(null);
     const auth = useAuth();
     const navigate = useNavigate();
-
-    useEffect(() => {
-
-    }, [userCredential]);
 
     const handleChange = (e) => { 
         if(e.target.value === '') {
@@ -27,12 +23,7 @@ const Login = () => {
     const handleLogin = (e) => {
         e.preventDefault();
         auth.login(userCredential);
-        console.log(auth.user)
-        if(auth.user !== null) {
-            navigate("/");
-        } else {
-            setError('El usuario no es válido');
-        }
+        navigate("/", { replace: true });
     }
 
     return (
@@ -45,7 +36,7 @@ const Login = () => {
                     </label>
                     {error && <p className="error-message">{error}</p>}
                     <Button type="submit" disabled={userCredential === ''}>
-                        INICIAR SESIÓN
+                        Iniciar Sesión
                     </Button>
                 </form>
                 <Link to="/register" className={styles.registerLink}>

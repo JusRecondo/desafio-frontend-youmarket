@@ -22,7 +22,7 @@ const Acredit = () => {
                     <CurrencyInput handleChange={handleInputCurrencyChange} value={credit}/>
                 </InfoCard>
                 <Button disabled={credit === '$0' || credit === ''}>
-                    CONTINUAR
+                    Continuar
                 </Button>
             </main>
         </>

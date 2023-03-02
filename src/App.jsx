@@ -7,6 +7,7 @@ import Acredit from './pages/acredit/Acredit';
 import Movements from './pages/movements/Movements';
 import Settings from './pages/settings/Settings';
 import { AuthProvider } from './context/AuthContext';
+import RequireAuth from './components/requireAuth/RequireAuth';
 
 function App() {
   return (
@@ -14,11 +15,11 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/awards" element={<Awards />} />
-          <Route path="/acredit" element={<Acredit />} />
-          <Route path="/movements" element={<Movements />} />
-          <Route path="/settings" element={<Settings />} />
+          <Route path="/" element={<RequireAuth><Home /></RequireAuth>} />
+          <Route path="/awards" element={<RequireAuth><Awards /></RequireAuth>} />
+          <Route path="/acredit" element={<RequireAuth><Acredit /></RequireAuth>} />
+          <Route path="/movements" element={<RequireAuth><Movements /></RequireAuth>} />
+          <Route path="/settings" element={<RequireAuth><Settings /></RequireAuth>} />
         </Routes>
       </div>
     </AuthProvider>

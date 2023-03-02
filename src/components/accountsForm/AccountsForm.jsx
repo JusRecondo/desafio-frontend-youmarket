@@ -35,7 +35,7 @@ const Accounts = ({ accounts, handleChange, handleSubmit, checkedOption }) => {
                             </label>
                         ))}
                     </fieldset>
-                    <Button type="submit" disabled={!checkedOption}>CONTINUAR</Button>
+                    <Button type="submit" disabled={!checkedOption}>Continuar</Button>
                 </form>
             ) : (
                 <p className={styles.errorMessage}>No hay cuentas disponibles.</p>

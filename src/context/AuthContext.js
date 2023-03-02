@@ -5,12 +5,14 @@ const AuthContext = createContext(null);
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
 
-    const login = (user) => {
-        //TODO API user validation
-        //todo return promise con settimeout
-        if(user === "test@test.com.ar") {
-            setUser(user);
-        }
+    const login = (userCredential) => {
+        //TODO API user validation & get user data
+        
+        setUser({
+            name: 'Test',
+            email: userCredential,
+            credit: '$10.000'
+        })
     }
 
     const logout = () => {
