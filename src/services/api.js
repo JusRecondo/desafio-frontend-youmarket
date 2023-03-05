@@ -17,8 +17,6 @@ export const getAllAccounts = async () => {
 }
 
 export const searchAccount = async (search) => {
-    if(search === '') return null;  
-
     try {
         const url = `${API_UL}?q=${search}`;
         const response = await fetch(url);

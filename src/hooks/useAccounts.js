@@ -15,7 +15,7 @@ export function useAccounts({ search }) {
     }, []);
 
     const searchAccountByNameOrEmail = useCallback(async search => {
-        if (search === previousSearch.current || search === '') return;
+        if (search === previousSearch.current) return;
 
         try {
             setLoading(true);
